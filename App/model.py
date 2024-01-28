@@ -100,14 +100,16 @@ def createTagList(catalog):
     catalog.update({"tags": tags})
     return catalog
 
-
 def addBookTags(catalog, booktagsfile):
     """
     Esta funcion crea una lista basado en el archivo de booktags. siga
     el mismo procedimiento que la funcion addBooks.
     """
-    # TODO: Mods Lab 1, completar funcion.
-    pass
+    books = catalog.get("book_tags")
+    books = lt.newList(datastructure="SINGLE_LINKED",
+                       filename=booksfile)
+    catalog.update({"book_tags":book_tags})
+    return catalog
 
 
 # Funciones de consulta
