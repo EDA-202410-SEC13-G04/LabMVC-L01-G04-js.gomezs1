@@ -91,4 +91,4 @@ def loadBooksTags(control, filename):
     if model.emptyBookTags(catalog):
         return None
     else:
-        return model.bookSize(catalog)
+        return model.bookTagSize(catalog)
