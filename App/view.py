@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
         elif int(inputs[0]) == 3:
             print("Cargando información de libros con tags....")
-            book_tags = loadBooksTags(control)
+            book_tags = loadBooksTags(control) ""
             print("Total de libros con tags cargados: " + str(book_tags) + "\n")
 
         elif int(inputs[0]) == 0:
